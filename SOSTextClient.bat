@@ -1,0 +1,1 @@
+c:\Python32\python.exe SOSTextClient.py
