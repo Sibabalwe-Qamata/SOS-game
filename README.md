@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/Sibabalwe-Qamata/CS1-Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The manner in which humans operate has been influenced by networking, which revolutionised the operations of humans. The SOS game demonstrates such operations that occur between humans, as proposed by the Ten Eleven Games. The goal of the project was to create a simple, well-known game that can be played over the server. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Below are two main tasks that will be discussed in this report:
+1.	Development of the SOS Text-Based Client
+2.	Development of the Graphical User Interface (GUI)
+The report will entail the design, implementation and testing phases, emphasising on the structure of the code as the foundation for future versions of this program. Each topic will have a formal introduction followed by an overview of the source code (as seen in the Appendices) with technical specifications and screenshots (where applicable).
 
-### Markdown
+Analysis of Phases:
+•	SOS Text-based Client (Design)
+The text based client is largely responsible for managing and processing raw user input. It allows user input, display relevant data, handle incoming messages from the server and handle exceptions generated at runtime.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+•	SOS GUI Prototype (Design)
+The GUI Prototype provides a user-friendly interface. It is the primary means of communication between the user and the program. The GUI will be designed for optimal efficiency and practicality while providing the user with various customisation options.
 
-```markdown
-Syntax highlighted code block
+•	User Testing
+Consumer testing will provide the necessary information with regard to improvements that need to be made. Separate testing for the Text-based Client and GUI Prototype will be done so that problems are easily identified and corrected. It also provides the development team with a rough idea of how successful the program will be, should development proceed.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Sibabalwe-Qamata/CS1-Project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+•	Final System (Implementation)
+The Final System represents the merge of the Text-based Client and the GUI Prototype. All necessary changes, based on the feedback from Consumer Testing, will be done in this phase before the merge occurs. Trial runs will be conducted (internally) to test for bugs due to the merge. Additional features will also be added during this phase if time permits.
