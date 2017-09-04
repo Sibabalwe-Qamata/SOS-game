@@ -1,6 +1,3 @@
-#CSC1011H Tutorial 8
-#Student_1 = Khomotjo_Modipa(MDPRAS001)
-#Student_2 = Sibabalwe_Qamata(QMTSIB001)
 
 import random
 import sys
@@ -310,8 +307,6 @@ class GameWidget(QtGui.QWidget):
         grid1_widget.setFont(font)
         grid1_widget.setLayout(grid1)
         
-        #grid1_widget.setPalette(QtGui.QPalette(QtGui.QColor('skyBlue')))
-        #grid1_widget.setAutoFillBackground(True)        
         
         #Grid_Layout_New_Game/Exit_Button
         Grid_new = QtGui.QGridLayout()
@@ -413,128 +408,13 @@ class GameWidget(QtGui.QWidget):
         
         self.loopthread.send_message(self.move)  #send user inputs to the server
         
-        #if self.chosen_character == "O":
-            #self.pic = 'images/long-o-sound_109x109.jpg'
-            #self.pixmap = QtGui.QPixmap(self.pic)
-
-        #elif self.chosen_character == "S":
-            #self.pic = 'images/blueS_109x109.jpg'
-            #self.pixmap = QtGui.QPixmap(self.pic)    
-            
-        #if self.chosen_position1 == 0:       
-            #self.pic_zero.setPixmap(self.pixmap)
-        
-        #elif self.chosen_position1 == 1:
-            #self.pic_one.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 2:
-            #self.pic_two.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 3:
-            #self.pic_three.setPixmap(self.pixmap)
-    
-        #elif self.chosen_position1 == 4:
-            #self.pic_four.setPixmap(self.pixmap)
-        
-        #elif self.chosen_position1 == 5:
-            #self.pic_five.setPixmap(self.pixmap)
-        
-        #elif self.chosen_position1 == 6:
-            #self.pic_six.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 7:
-            #self.pic_seven.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 8:
-            #self.pic_eight.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 9:
-            #self.pic_nine.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 10:
-            #self.pic_ten.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 11:
-            #self.pic_eleven.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 12:
-            #self.pic_twelve.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 13:
-            #self.pic_thirteen.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 14:
-            #self.pic_fourteen.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 15:
-            #self.pic_fifteen.setPixmap(self.pixmap)         
+             
   
         self.position_edit.setText("")  #clear text edit box
         #self.loopthread.send_message()  #indicate to the server that position chosen
         return self.chosen_character, self.chosen_position1
         
-    #def Update_Board(self):
-        
-        #self.input_move()
-        #self.chosen_character = self.character_combox.currentText()
-        #self.chosen_position1 = int(self.chosen_position)        
-        
-        #if self.chosen_character == "O":
-            #self.pic = 'images/long-o-sound_109x109.jpg'
-            #self.pixmap = QtGui.QPixmap(self.pic)
-
-        #elif self.chosen_character == "S":
-            #self.pic = 'images/blueS_109x109.jpg'
-            #self.pixmap = QtGui.QPixmap(self.pic)    
-            
-        #if self.chosen_position1 == 0:       
-            #self.pic_zero.setPixmap(self.pixmap)
-        
-        #elif self.chosen_position1 == 1:
-            #self.pic_one.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 2:
-            #self.pic_two.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 3:
-            #self.pic_three.setPixmap(self.pixmap)
-    
-        #elif self.chosen_position1 == 4:
-            #self.pic_four.setPixmap(self.pixmap)
-        
-        #elif self.chosen_position1 == 5:
-            #self.pic_five.setPixmap(self.pixmap)
-        
-        #elif self.chosen_position1 == 6:
-            #self.pic_six.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 7:
-            #self.pic_seven.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 8:
-            #self.pic_eight.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 9:
-            #self.pic_nine.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 10:
-            #self.pic_ten.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 11:
-            #self.pic_eleven.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 12:
-            #self.pic_twelve.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 13:
-            #self.pic_thirteen.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 14:
-            #self.pic_fourteen.setPixmap(self.pixmap)
-            
-        #elif self.chosen_position1 == 15:
-            #self.pic_fifteen.setPixmap(self.pixmap)        
-    
+  
         
         
     def Clear_Board(self): #change each individual button's Pixmap to blank image 
@@ -582,12 +462,7 @@ class GameWidget(QtGui.QWidget):
         self.server_edit.setText("")
             
     def handle_message(self,msg):
-        #self.board = self.Update_Board()
-        #self.move = self.input_move()
-        #self.chosen_character = self.character_combox.currentText()
-        #self.chosen_position1 = self.chosen_position
-        
-          
+       
         global message
              # Calls the skipDisplay variable
         global skipDisplay
